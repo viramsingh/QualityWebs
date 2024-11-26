@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freeze</title>
+    <link rel="stylesheet" href="freeze.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <h1>This is some page content</h1>
+    <p>And more content</p>
+
+    <button id="open">Click Me To Show Modal</button>
+    <div>More content</div>
+
+
+    <div class="hidden pageCover"></div>
+
+    <div class="hidden modali">
+        <!--Chatbot-->
+        <div class="desc">
+
+            <button id="init">START CHAT</button>
+
+        </div>
+
+
+        <div id="test" style="position: fixed;top: 4rem;right: 5rem;display: none;">
+            <div class="child" id="chatbot">
+                <div class="header">
+                    <div class="h-child">
+                        <img src="chatbot (1).png" alt="avatar" id="avatar">
+                        <div>
+                            <span class="name">Chatbot</span>
+                            <br>
+                            <span style="color:lawngreen">online</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                    </div>
+                </div>
+
+                <div id="chat-box">
+
+                </div>
+
+                <div class="footer">
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                                placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+                        <div class="chat-bar-icons">
+                            <a href="tel:07317177541"><i id="chat-icon" style="color: blue;"
+                                    class="fa fa-phone"></i></a>
+                            <a href="https://wa.me/message/6A5UAMDJXZ55M1"><i id="chat-icon"
+                                    style="color:green;font-size: 24px;" class="fa fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--End-->
+
+        <button id="close">Close</button>
+    </div>
+
+    <script src="freeze.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
